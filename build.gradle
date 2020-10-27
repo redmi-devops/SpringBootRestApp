@@ -20,9 +20,7 @@ plugins {
 	
 }
 
-allprojects {
-    apply plugin: "com.jfrog.artifactory"
-}
+
 
 group = 'com.kkjavatutorials'
 version = '0.0.1-SNAPSHOT'
