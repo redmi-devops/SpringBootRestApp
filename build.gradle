@@ -46,7 +46,7 @@ test {
 
 	
 	
-
+/*
 artifactory {
     contextUrl = "http://65.0.92.200:8081/artifactory"   //The base Artifactory URL if not overridden by the publisher/resolver
     publish {
@@ -62,14 +62,6 @@ artifactory {
    		publications ('mavenJava')
      }
      
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            from components.java
-        }
-    }
-}
-
     }
     resolve {
         repository {
@@ -78,6 +70,14 @@ publishing {
             password = "${artifactory_password}"
             maven = true
             
+        }
+    }
+} */
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
         }
     }
 }
