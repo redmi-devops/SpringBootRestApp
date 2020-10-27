@@ -35,12 +35,17 @@ dependencies {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 	//Check for the latest version here: http://plugins.gradle.org/plugin/com.jfrog.artifactory
-       classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4+"
+       //classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4+"
 }
 
 test {
 	useJUnitPlatform()
 }
+defaults {
+   		publications ('mavenJava')
+	}
+	
+	
 /*
 artifactory {
     contextUrl = "http://65.0.92.200:8081/artifactory"   //The base Artifactory URL if not overridden by the publisher/resolver
