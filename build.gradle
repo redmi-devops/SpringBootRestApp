@@ -17,8 +17,11 @@ plugins {
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
 	id "org.sonarqube" version "2.7"
-	id "com.jfrog.artifactory"
-	// id "org.gradle.api.Project"
+	
+}
+
+allprojects {
+    apply plugin: "com.jfrog.artifactory"
 }
 
 group = 'com.kkjavatutorials'
