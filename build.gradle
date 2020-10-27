@@ -41,7 +41,7 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
-
+/*
 artifactory {
     contextUrl = "http://65.0.92.200:8081/artifactory"   //The base Artifactory URL if not overridden by the publisher/resolver
     publish {
@@ -67,3 +67,4 @@ artifactory {
         }
     }
 }
+*/
