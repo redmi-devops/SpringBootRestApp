@@ -41,9 +41,7 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
-defaults {
-   		publications ('mavenJava')
-	}
+
 	
 	
 /*
