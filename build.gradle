@@ -1,12 +1,12 @@
 buildscript {
     repositories {
         mavenCentral()
-        maven {
+      /*  maven {
             url 'http://65.0.92.200:8081/artifactory/gradle-dev'
        //     credentials {
        //         username = "${artifactory_user}"
        //         password = "${artifactory_password}"
-            }
+            }*/
 	mavenLocal()    
         }
         
@@ -16,7 +16,7 @@ plugins {
 	id 'org.springframework.boot' version '2.3.2.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
-	id "org.sonarqube" version "2.5"
+	// id "org.sonarqube" version "2.5"
 	
 }
 
@@ -28,7 +28,7 @@ sourceCompatibility = '8'
 
 repositories {
 	mavenCentral()
-	maven { url 'http://65.0.92.200:8081/artifactory/gradle-dev'}
+	//maven { url 'http://65.0.92.200:8081/artifactory/gradle-dev'}
 }
 
 dependencies {
