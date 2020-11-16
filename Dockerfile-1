@@ -1,0 +1,17 @@
+FROM openjdk:8-jdk-alpine
+#ARG JAR_FILE=target/*.jar
+
+# Required for starting application up.
+RUN apk update && apk add /bin/sh
+
+RUN mkdir -p /opt/app
+ENV PROJECT_HOME /opt/app
+
+
+COPY SpringBootRestApp-1.0.jar $PROJECT_HOME/springboot.jar
+
+WORKDIR $PROJECT_HOME
+
+ENTRYPOINT ["java","-jar","./springboot.jar"]
+
+EXPOSE 8080
