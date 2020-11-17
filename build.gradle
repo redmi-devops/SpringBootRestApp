@@ -26,6 +26,14 @@ group = 'com.kkjavatutorials'
 version = '1.0'
 sourceCompatibility = '8'
 
+jar {
+
+	enabled = true
+	baseName = 'springbootrestapp'
+	version = '1.0'
+
+}
+
 repositories {
 	mavenCentral()
 	//maven { url 'http://65.0.92.200:8081/artifactory/gradle-dev'}
