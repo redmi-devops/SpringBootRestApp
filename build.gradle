@@ -22,6 +22,7 @@ plugins {
 
 
 
+
 group = 'com.kkjavatutorials'
 version = '1.0'
 sourceCompatibility = '8'
@@ -32,6 +33,12 @@ jar {
 	enabled = true
 //	baseName = 'springbootrestapp'
 //	version = '2.0'
+
+	manifest {
+        attributes(
+                'Main-Class': 'com.mypackage.MyClass'
+        )
+    }
 
 } 
 
