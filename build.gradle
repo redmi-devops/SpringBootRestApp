@@ -27,7 +27,7 @@ group = 'com.kkjavatutorials'
 version = '1.0'
 sourceCompatibility = '8'
 
-
+/*
 jar {
 
 	enabled = true
@@ -41,7 +41,7 @@ jar {
     }
 
 } 
-
+*/
 
 repositories {
 	mavenCentral()
