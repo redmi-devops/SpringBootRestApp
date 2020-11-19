@@ -15,3 +15,5 @@ COPY ${JAR_FILE} $PROJECT_HOME/app.jar
 WORKDIR $PROJECT_HOME
 
 ENTRYPOINT ["java","-jar","./app.jar"]
+
+EXPOSE 8081
